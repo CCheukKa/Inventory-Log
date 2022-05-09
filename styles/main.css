@@ -10,10 +10,11 @@
     --palette-assurance: #99fd9a;
     --palette-stylise: #b7a4f8;
     --palette-supportive: #93c2ff;
+    --palette-dark: #192e45
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .highlight {
@@ -38,6 +39,15 @@
 
 .supportive {
     color: var(--palette-supportive);
+}
+
+.dark {
+    color: var(--palette-dark);
+}
+
+::selection {
+    background: var(--palette-attention);
+    color: var(--palette-text);
 }
 
 body {
@@ -114,4 +124,8 @@ img {
 .properties {
     width: calc(100% - 13% * 2);
     padding: 1% 2%;
+}
+
+.add {
+    cursor: pointer;
 }
