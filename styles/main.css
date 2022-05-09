@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --palette-background: #2c4e72;
+    --palette-text: #f8f7f3;
+    --palette-highlight: #ebe794;
+    --palette-emphasis: #ffaff7;
+    --palette-attention: #fc787a;
+    --palette-assurance: #99fd9a;
+    --palette-stylise: #b7a4f8;
+    --palette-supportive: #93c2ff;
+}
+
+* {
+    outline: 1px solid red;
+}
+
+.highlight {
+    color: var(--palette-highlight);
+}
+
+.emphasis {
+    color: var(--palette-emphasis);
+}
+
+.attention {
+    color: var(--palette-attention);
+}
+
+.assurance {
+    color: var(--palette-assurance);
+}
+
+.stylise {
+    color: var(--palette-stylise);
+}
+
+.supportive {
+    color: var(--palette-supportive);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--palette-background);
+    color: var(--palette-text);
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+header {
+    width: auto;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: var(--palette-background);
+    font-size: 80pt;
+    background-color: var(--palette-supportive);
+    border-bottom: var(--palette-text) 5px solid;
+}
+
+.bodyContainer {
+    width: 100%;
+    /* height: 90%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: xx-large;
+    /* font-family: 'Noto Sans HK', sans-serif; */
+}
+
+.property-list {
+    width: 96%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    flex-direction: column;
+    padding-left: 2%;
+}
+
+.property-set {
+    height: fit-content;
+    width: 97%;
+    background-color: var(--palette-supportive);
+    border-radius: 10px 40px 40px 10px;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: var(--palette-background);
+    font-family: 'Noto Sans HK';
+    font-weight: normal;
+    font-size: 6.5vw;
+}
+
+img {
+    filter: invert(28%) sepia(27%) saturate(897%) hue-rotate(170deg) brightness(97%) contrast(98%);
+    /* filter: invert(75%) sepia(96%) saturate(7%) hue-rotate(10deg) brightness(108%) contrast(99%); */
+    /* filter: invert(89%) sepia(13%) saturate(1083%) hue-rotate(7deg) brightness(108%) contrast(84%); */
+    /* filter: invert(65%) sepia(38%) saturate(1758%) hue-rotate(310deg) brightness(98%) contrast(101%); */
+    /* filter: invert(82%) sepia(63%) saturate(337%) hue-rotate(58deg) brightness(106%) contrast(98%); */
+    /* filter: invert(67%) sepia(22%) saturate(707%) hue-rotate(212deg) brightness(98%) contrast(99%); */
+    /* filter: invert(68%) sepia(29%) saturate(550%) hue-rotate(177deg) brightness(102%) contrast(101%); */
+    /*  */
+    width: 13%;
+}
+
+.properties {
+    width: calc(100% - 13% * 2);
+    padding: 1% 2%;
+}
